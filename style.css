@@ -1,0 +1,292 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #21243d;
+    line-height: 1.6;
+    background-color: white;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+header h2 {
+    font-size: 22px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #08080c;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 50px;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #ff6464;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+
+.profile {
+    width: 243px;
+    height: 243px;
+    border-radius: 59%;
+     background-color: #e5e8f4;
+    border: 5px solid #f0f2fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    font-weight: bold;
+} 
+    
+
+/* .profile1{
+    height: 100px;
+    width: 100px;
+    border: 5px solid red;
+   margin-bottom: 100px;
+} */
+.profile1 img{
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+}
+
+
+.posts {
+    background-color: #edf7fa;
+    padding: 25px 10%;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.section-heading h3,
+.works > h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.section-heading a {
+    color: #00a8cc;
+    text-decoration: none;
+}
+
+.post-container {
+    display: flex;
+    gap: 20px;
+}
+
+.post {
+    background-color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+.post h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.post p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+.works {
+    padding: 30px 10%;
+}
+
+.works > h3 {
+    margin-bottom: 20px;
+}
+
+.work {
+    display: flex;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.work-image {
+    min-width: 180px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.image-one img{
+    height: 160px;
+    width: 150px;
+    
+}
+
+.image-two img{
+    height: 160px;
+    width: 150px;
+}
+
+.image-three img{
+     height: 160px;
+    width: 150px;
+}
+
+.work h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.work p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    color: #8695a4;
+}
+
+
+footer {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+.social {
+    margin-bottom: 15px;
+}
+
+.social a {
+    text-decoration: none;
+    color: #21243d;
+    margin: 0 10px;
+    font-size: 13px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 5%;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 35px 7%;
+        gap: 25px;
+    }
+
+    .profile {
+        width: 120px;
+        height: 120px;
+    }
+
+    .intro h1 {
+        font-size: 25px;
+    }
+
+    .intro p {
+        font-size: 13px;
+    }
+
+    .posts {
+        padding: 20px 7%;
+    }
+
+    .post-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .post {
+        padding: 18px;
+    }
+
+    .post h3 {
+        font-size: 16px;
+    }
+
+    .works {
+        padding: 25px 7%;
+    }
+
+    .work {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .work-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .work h3 {
+        font-size: 18px;
+    }
+
+    footer {
+        padding: 25px 10px;
+    }
+}
